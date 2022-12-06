@@ -59,7 +59,7 @@ void loop() {
   Audio.ReadFreq(freqVal);
   for(int i = 0; i < 6; i++) //Displays frequncy values on serial monitor    
   {
-    //Serial.print(max(freqVal[i] - 100, 0));
+    Serial.print(max(freqVal[i] - 100, 0));
     if (i < 5)  
       Serial.print(",");
     else 
